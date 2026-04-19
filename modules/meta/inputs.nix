@@ -1,7 +1,7 @@
 { inputs, lib, ... }:
 {
   imports = [
-    # inputs.den.flakeModules.dendritic
+    inputs.den.flakeModules.dendritic
     inputs.flake-file.flakeModules.dendritic
   ];
   flake-file = {
