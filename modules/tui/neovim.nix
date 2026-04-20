@@ -1,6 +1,6 @@
 { inputs, ... }:
 {
-  den.aspects.neovim = {
+  jk.neovim = {
     homeManager = { pkgs, ... }: {
       home.packages = [ pkgs.neovim ];
     };

@@ -1,4 +1,4 @@
-{ den, ... }:
+{ den, jk, ... }:
 {
   den.aspects.jake = {
     includes = [
@@ -6,7 +6,7 @@
       den.provides.primary-user
       (den.provides.user-shell "zsh")
 
-      den.aspects.neovim
+      jk.tui
     ];
     homeManager = { pkgs, ... }: {
       home.packages = [ 
