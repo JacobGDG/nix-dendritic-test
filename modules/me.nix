@@ -1,5 +1,8 @@
-{ den, jk, ... }:
 {
+  den,
+  jk,
+  ...
+}: {
   den.aspects.jake = {
     includes = [
       den.provides.define-user
@@ -8,8 +11,8 @@
 
       jk.tui
     ];
-    homeManager = { pkgs, ... }: {
-      home.packages = [ 
+    homeManager = {pkgs, ...}: {
+      home.packages = [
         pkgs.htop
       ];
       programs.cava.settings.colour.forground = "#FFFFFF";
