@@ -1,5 +1,5 @@
 {
-  perSystem = { pkgs, ... }: {
+  perSystem = {pkgs, ...}: {
     devShells.default = pkgs.mkShell {
       name = "dendritic-devShell";
       packages = with pkgs; [

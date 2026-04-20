@@ -1,9 +1,7 @@
-{ inputs, ... }:
 {
   jk.neovim = {
-    homeManager = { pkgs, ... }: {
-      home.packages = [ pkgs.neovim ];
+    homeManager = {pkgs, ...}: {
+      home.packages = [pkgs.neovim];
     };
   };
 }
-

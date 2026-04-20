@@ -1,5 +1,4 @@
-{ lib, ... }:
-{
+{lib, ...}: {
   jk.cava.homeManager = {
     programs.cava = {
       enable = true;

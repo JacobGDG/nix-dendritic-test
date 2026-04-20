@@ -1,4 +1,3 @@
-{ lib, ... }:
 {
   systems = [
     "aarch64-darwin"
