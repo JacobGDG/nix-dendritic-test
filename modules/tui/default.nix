@@ -1,6 +1,7 @@
 { jk, ... }:
 {
-  jk.tui.includes = [
-    jk.neovim
+  jk.tui.includes = with jk; [
+    neovim
+    cava
   ];
 }

@@ -12,6 +12,7 @@
       home.packages = [ 
         pkgs.htop
       ];
+      programs.cava.settings.colour.forground = "#FFFFFF";
     };
   };
 }
