@@ -15,6 +15,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     import-tree.url = "github:vic/import-tree";
+    neovim.url = "git+ssh://git@github.com/JacobGDG/nvim.nix.git?shallow=1";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
   };
 }
