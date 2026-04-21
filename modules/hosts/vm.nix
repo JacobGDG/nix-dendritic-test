@@ -9,6 +9,8 @@
 
     nixos = {pkgs, ...}: {
       environment.systemPackages = [pkgs.hello];
+      boot.loader.grub.enable = false;
+      fileSystems."/".device = "/dev/null";
     };
   };
 
