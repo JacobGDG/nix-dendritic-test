@@ -3,6 +3,7 @@
   jk,
   ...
 }: {
+  den.homes.x86_64-linux.jake = {};
   den.aspects.jake = {
     includes = [
       den.provides.define-user

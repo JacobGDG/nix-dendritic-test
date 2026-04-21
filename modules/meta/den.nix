@@ -11,6 +11,6 @@
   };
 
   imports = [
-    (inputs.den.namespace "jk" true)
+    (inputs.den.namespace "jk" false)
   ];
 }
