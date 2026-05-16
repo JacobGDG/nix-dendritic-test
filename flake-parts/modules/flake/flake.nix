@@ -1,9 +1,7 @@
-{ inputs, ... }:
-{
-
+{inputs, ...}: {
   imports = [
     inputs.flake-file.flakeModules.default
-    inputs.flake-parts.flakeModules.modules 
+    inputs.flake-parts.flakeModules.modules
   ];
 
   flake-file.outputs = "inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules)";

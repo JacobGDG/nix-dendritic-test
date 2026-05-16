@@ -9,5 +9,9 @@ vm-clean host=`hostname`:
   rm -f ./{{host}}.qcow2
 
 [linux]
+os-build host=`hostname`:
+  sudo nixos-rebuild build --flake .#"{{host}}" --show-trace
+
+[linux]
 vm host=`hostname`: (vm-clean host)
   nix run .#vm-{{host}}
