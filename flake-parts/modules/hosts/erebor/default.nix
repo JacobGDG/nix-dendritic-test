@@ -4,9 +4,10 @@
   };
 
   flake.modules.nixos."nixosConfigurations/erebor" = {
-    networking.hostname = "erebor";
+    networking.hostName = "erebor";
 
     system = {
+      stateVersion = "25.05";
       autoUpgrade.enable = false;
     };
   };
