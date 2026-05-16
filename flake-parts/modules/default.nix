@@ -7,10 +7,14 @@
 
   systems = inputs.nixpkgs.lib.systems.flakeExposed;
 
+  flake-file.outputs = "inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules)";
+
   flake-file.inputs = {
     flake-file.url = "github:vic/flake-file";
     flake-parts.url = "github:hercules-ci/flake-parts";
-    nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
+    import-tree.url = "github:denful/import-tree";
+
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
   };
 
 }
