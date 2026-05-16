@@ -3,9 +3,8 @@
 
   imports = [
     inputs.flake-file.flakeModules.default
+    inputs.flake-parts.flakeModules.modules 
   ];
-
-  systems = inputs.nixpkgs.lib.systems.flakeExposed;
 
   flake-file.outputs = "inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules)";
 
@@ -16,5 +15,4 @@
 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
   };
-
 }
